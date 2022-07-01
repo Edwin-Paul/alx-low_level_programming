@@ -1,21 +1,21 @@
-#include <stdio.h>
-
 /**
- *main - Entry point
- *Description - Printing base 16 numbers
- *Return:0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
+#include <stdio.h>
 int main(void)
 {
-	int i, y;
-	for (i = 0; i < 10; i++)
+	int i;
+
+	for (i = 48 ; i < 58 ; i++)
 	{
-		putchar (i + '0');
+		putchar(i);
 	}
-	 	for (y = 'a'; y <= 'f'; y++)
-			{
-				putchar (y); 
-			}	   
+	for (i = 97 ; i < 103 ; i++)
+	{
+		putchar(i);
+	}
 	putchar('\n');
-	return (0);	   
+	return (0);
 }
