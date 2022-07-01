@@ -1,28 +1,21 @@
-#include <stdio.h>
 /**
- * main - main block
- * Description:  prints the alphabet in lowercase,
- * and then in uppercase, followed by a new line.
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
+
+#include <stdio.h>
+
 int main(void)
 {
-	char c = 'a';
+	char letra = 'a';
+	char retorno = '\n';
 
-	while (c <= 'z')
+	while (letra <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar (letra);
+		letra++;
 	}
-
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-
-	putchar('\n');
+	putchar (retorno);
 	return (0);
 }
